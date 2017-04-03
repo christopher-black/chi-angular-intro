@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html ng-app> <!-- Angular has full control over the page -->
+<html ng-app="myApp"> <!-- Angular has full control over the page -->
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script type="text/javascript" src="angular.js">
-
-    </script>
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="client.js"></script>
   </head>
   <body>
     <input type="text" ng-model="intro">
-    <p>{{intro}}</p>
+    <p>{{intro + " meow."}}</p>
+
+    <div ng-controller="BaseController">
+      <p>{{hello}}</p>
+    </div>
   </body>
 </html>
